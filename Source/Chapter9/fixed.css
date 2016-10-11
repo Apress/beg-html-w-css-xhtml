@@ -1,0 +1,4 @@
+p {border-width: thin;border-style: solid; height: 100px; width: 100px;text-align: center}
+p.red {background-color: red; position: fixed; top: 0; left: 0}
+p.white {background-color: white; position: fixed; top: 0; left: 150px}
+p.blue {background-color: blue; position: fixed; top: 0; left: 300px}

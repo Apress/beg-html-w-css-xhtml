@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Removing the border from fieldsets</title>
+	<style type="text/css">
+	ul { list-style: none; margin: 0; padding: 0; }
+	li { margin: .2em 0; }
+	
+	fieldset {
+    border: none;
+    padding: 0;
+  }
+  </style>
+</head>
+
+<body>
+ 
+    <form method="post" action="/cgi-bin/formhandler.cgi">
+      <fieldset>
+        <legend>Subscribe to our mailing list</legend>
+          <p><label for="email">Your E-mail address</label> <input type="text" id="email" /></p>
+          <fieldset>
+            <legend>Select your preferred format</legend>
+            <ul>
+              <li><label for="text"><input type="radio" name="pref" id="text" /> Plain text</label></li>
+              <li><label for="html"><input type="radio" name="pref" id="html" /> HTML</label></li>
+            </ul>
+          </fieldset>
+        <p><input type="submit" id="subscribe" value="Subscribe" /></p>
+      </fieldset>
+    </form>
+
+</body>
+</html>

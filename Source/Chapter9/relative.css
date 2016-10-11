@@ -1,0 +1,5 @@
+p {border-width: thin;border-style: solid; height: 100px; width: 100px;text-align:
+center}
+p.red {background-color: red; position: relative; left: 0;}
+p.white {background-color: white; position: relative; top: -100px;left: 50px;}
+p.blue {background-color: blue; position: relative; top: -200px;left: 100px;}

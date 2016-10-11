@@ -1,0 +1,188 @@
+/***************************************************************
+	This is the style sheet for the Spaghetti and Cruft example
+	website from Chapter 11 of Beginning HTML with CSS and XHTML, 
+	by Craig Cook and David Schultz (Apress, 2007).
+	
+	This site was designed and built by Craig Cook in March, 2007. 
+	You can also view it at http://www.beginninghtmlbook.com.
+***************************************************************/
+
+/* Styling the page body **************************************/
+html { background: #fff url(images/background.gif) repeat-x; }
+
+body {
+	position: relative;
+	min-width: 670px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	font: 90%/1.7 "Trebuchet MS", Helvetica, Arial, sans-serif;
+	color: #555; }
+
+/* Styling links **********************************************/
+a:link { color: #006d14; }
+a:visited { color: #48a95a; }
+a:hover { color: #ab0000; }
+a:focus, a:active { color: #c50000; background-color: #ddd; }
+
+/* Styling headings *******************************************/
+h2, h3 {
+	color: #ab0000;
+	font: normal 150% Georgia, "Times New Roman", Times, serif;
+	margin-top: 0; }
+
+h3 { font-size: 135%; }
+h4 { margin-bottom: -1em; }
+
+/* Styling the masthead ***************************************/
+#branding {
+	position: relative; 
+	height: 250px;
+	margin-bottom: 15px;
+	background: #900 url(images/background.gif) repeat-x; }
+	
+#branding h1 {
+	margin: 0; 
+	padding: 10px 0 0;
+	color: #fff; }
+
+#branding a img { border: none; background: transparent; }
+#branding h1 a { color: #fff; }
+#branding h1 a:focus, #branding h1 a:active { background: transparent; }
+
+/* Styling the address ****************************************/
+#address {
+	color: #eee;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  margin: 0;
+  text-align: right;
+  font-size: 90%;
+  line-height: 1.3; }
+
+/* Styling the tag line ***************************************/
+#tagline {
+  margin: 0;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 65%;
+  font: italic 140% Georgia, "Times New Roman", Times, serif;
+  color: #fffdd7;
+  text-align: center; }
+
+#tagline p { margin: 0 0 .2em; }
+
+/* Styling the main content ************************************/
+#main-content { width: 65%; float: right; padding-bottom: 20px; }
+
+#main-content p img {
+	float: right;
+	margin-left: 10px;
+	border: 1px solid #666;
+	padding: 2px; }
+
+/* Styling the navigation menu **********************************/
+#navigation {
+	width: 30%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #b5b5b5; }
+
+#navigation li {
+	border-bottom: 1px solid #b5b5b5;
+	font: 130% Georgia, "Times New Roman", Times, serif;
+	padding: 6px 0 6px 35px;
+	background: transparent url(images/ornament.gif) 0 50% no-repeat; }
+	
+#navigation a { text-decoration: none; }
+
+#navigation li.current {
+	font-style: italic;
+	background-image: url(images/ornament-current.gif);
+	color: #ab0000; }
+	
+/* Styling the footer ********************************************/
+#copyright {
+	clear: both;
+	text-align: right;
+	font-size: 80%;
+	color: #888;
+	padding-top: 15px;
+	background: transparent url(images/footerline.gif) 100% 0 no-repeat; }
+
+/* Styling the contact form **************************************/
+#contact {
+	border: none;
+	margin: 0;
+	padding: 0; }
+
+#contact ol {
+	list-style: none;
+	margin: 0;
+	padding: 0; }
+	
+#contact li {
+	margin: .2em 0;
+	float: left;
+	width: 100%; }
+
+#contact label {
+	width: 30%;
+	float: left;
+	text-align: right;
+	margin-right: 2%; }
+
+#contact input#submit {
+	margin-left: 32%;
+	width: 10em; }
+
+#contact input, #contact select, #contact textarea {
+	font-family: inherit;
+	font-size: 100%; }
+
+#contact legend {
+	color: #ab0000;
+	font: 135% Georgia, "Times New Roman", Times, serif;
+	margin: auto 0;
+	padding: 0; }
+
+/* Styling the menu page ******************************************/
+.menu {
+	width: 100%;
+	margin-bottom: 3em;
+	border-collapse: collapse; }
+
+.menu th {
+	color: #ab0000;
+	text-align: left;
+	border-bottom: 1px solid #ddd; }
+	
+.menu td { border-bottom: 1px solid #ddd; }
+
+.menu thead th { font-size: 85%; }
+.menu tbody th { width: 50%; }
+
+.menu tbody th em {
+	font-size: 90%;
+	font-weight: normal;
+	color: #555; }
+
+/* Styling the reviews page ****************************************/
+.blurb {
+  margin-bottom: 1em;
+  padding-bottom: 30px;
+  background: transparent url(images/blurb.gif) 50% 95% no-repeat; }
+
+.blurb blockquote {
+  margin: 1em 20px;
+  font-style: italic; }
+
+.blurb cite { font-style: normal; }
+
+.blurb p.source {
+  text-align: right;
+  font-size: 90%; }

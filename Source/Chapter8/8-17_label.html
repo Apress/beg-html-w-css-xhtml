@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Listing 8-17. Fieldsets and labels</title>
+</head>
+
+<body>
+ 
+  <form method="post" action="/cgi-bin/formhandler.cgi">
+    
+    <fieldset> 
+      <legend>Subscribe to our mailing list</legend> 
+        <p> 
+          <label for="email">Your E-mail address</label> 
+          <input type="text" name="email" id="email" /> 
+        </p> 
+        <fieldset> 
+          <legend>Select your preferred format</legend> 
+          <ul> 
+            <li> 
+              <label for="text"> 
+                <input type="radio" name="pref" value="text" id="text" /> Plain text 
+              </label> 
+            </li> 
+            <li> 
+               <label for="html"> 
+                 <input type="radio" name="pref" value="html" id="html" /> HTML 
+               </label> 
+            </li> 
+          </ul> 
+        </fieldset> 
+      <p><input type="submit" id="subscribe" value="Subscribe" /></p> 
+    </fieldset>
+     
+  </form>
+
+</body>
+</html>

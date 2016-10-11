@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Contact Us - Spaghetti &#38; Cruft</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<div id="branding">
+  <h1><a href="index.html" title="Return to the home page"><img src="images/logo.gif" width="375" height="200" alt="Spaghetti and Cruft: Geek Pizzeria" /></a></h1>
+  
+  <p id="address">
+    Spaghetti &#38; Cruft<br />
+    742 Cederholm Ave.<br />
+    Gotham, CA 00234<br />
+    510-555-0987
+  </p>
+</div>
+
+<div id="main-content">
+  <h2>Drop us a line</h2>
+  
+  <p> We love getting e-mail! If you have any questions or comments 
+  for the <abbr title="Spaghetti and Cruft">S&#38;C</abbr> crew, 
+  send it to us using the form below.</p>
+  
+  <p>All fields are required.</p>
+  
+  <form method="post" action="/path/to/formhandler/">
+    <fieldset id="contact">
+      <legend>Contact us</legend>
+      <ol>
+        <li>
+          <label for="name">Your name</label> 
+          <input type="text" id="name" name="name" />
+        </li>
+      
+        <li>
+          <label for="email">Your E-mail address</label> 
+          <input type="text" id="email" name="email" />
+        </li>
+      
+        <li>
+          <label for="subject">What's this about?</label> 
+          <select id="subject" name="subject">
+            <option value="" selected="selected">-- select --</option>
+            <option value="Hello">I'm just saying "hello"</option>
+            <option value="Menu Question">I have a question about your menu</option>
+            <option value="Catering">I have a question about catering</option>
+            <option value="Complaint">I'd like to lodge a complaint</option>
+          </select>
+        </li>
+      
+        <li>
+          <label for="message">Your message</label> 
+          <textarea id="message" name="message" cols="40" rows="10"></textarea>
+        </li>
+      
+        <li>
+          <input type="submit" id="submit" name="submit" value="Send" />
+        </li>
+      </ol>
+    </fieldset>
+  </form>
+</div>
+
+<ul id="navigation">
+  <li><a href="menu.html">Our Menu</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="reviews.html">Raves and Reviews</a></li>
+  <li><a href="news.html">News and Events</a></li>
+  <li class="current">Contact Us</li>
+</ul>
+
+<div id="tagline">
+  <p>Pizza, pasta, and WiFi.</p>
+  <p>Enjoy a bite with your bytes.</p>
+</div>
+
+<p id="copyright">&#169; 2007 Spaghetti &#38; Cruft: Geek Pizzeria</p>
+</body>
+</html>

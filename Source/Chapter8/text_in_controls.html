@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Styling text in form controls</title>
+	<style type="text/css">
+	/* These style rules should ideally appear in an external style sheet. 
+	   They're embedded here for demonstration. */
+	body { font-family: "Trebuchet MS", verdana, sans-serif;  }
+	ol { list-style: none; margin: 0; padding: 0; }
+	li { margin: .5em 0; }
+	label { float: left; width: 200px; margin-right: 15px; text-align: right; }
+	input#submit { margin-left: 215px; }
+	
+	input, select, textarea { font-family: inherit; }
+	</style>
+	
+</head>
+
+<body>
+  
+<form method="post" action="/cgi-bin/formhandler.cgi">
+
+  <ol>
+    <li>
+      <label for="name">Your name</label> 
+      <input type="text" id="name" size="35" />
+    </li>
+    <li>
+      <label for="email">Your E-mail address</label> 
+      <input type="text" id="email" size="35" />
+    </li>
+    <li>
+      <label for="subject">What's this about?</label> 
+      <select id="subject">
+        <option value="" selected="selected">-- select --</option>
+        <option value="Hello">I'm just saying "hello"</option>
+        <option value="Menu Question">I have a question about your menu</option>
+        <option value="Catering">I have a question about catering</option>
+        <option value="Complaint">I'd like to lodge a complaint</option>
+      </select>
+    </li>
+    <li>
+      <label for="message">Your message</label> 
+      <textarea id="message" cols="33" rows="10"></textarea>
+    </li>
+    <li>
+      <input id="submit" type="submit" value="Send It!" />
+    </li>
+  </ol>
+
+</form>
+
+</body>
+</html>

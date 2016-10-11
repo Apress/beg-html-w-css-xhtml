@@ -1,0 +1,33 @@
+<?xml version"1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>JavaScript Nested Ifs</title>
+    <script type="text/javascript">
+      var iAge;
+      var sMF;
+      iAge = prompt("Please enter your age in years.",0);
+      sMF = prompt("Are you a (M)ale or (F)emale?","M");
+      if(iAge > 20) {
+        if(sMF == "M") {
+          alert("You are a male over 20 years of age");
+        }
+        else {
+          alert("You are a female over 20 years of age");
+        }
+      }
+      else {
+        if(sMF == "M") {
+          alert("You are a male under the age of 21");
+        }
+        else {
+          alert("You are a female under the age of 21");
+        }
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
